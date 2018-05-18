@@ -9,3 +9,17 @@ Migrating to CreatePosts (20151230232412)
   [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20151230232412"]]
   [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
   [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for ::1 at 2018-05-18 13:23:12 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/aaronna/.rvm/gems/ruby-2.3.3/gems/railties-4.2.10/lib/rails/templates/rails/welcome/index.html.erb (2.9ms)
+Completed 200 OK in 30ms (Views: 20.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/show" for ::1 at 2018-05-18 13:23:19 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"show"}
+  Rendered posts/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 546ms (Views: 544.8ms | ActiveRecord: 0.0ms)
